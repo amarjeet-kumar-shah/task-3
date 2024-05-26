@@ -6,7 +6,7 @@ body {
   padding: 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: Left;
 }
 h1,
 h2 {
@@ -36,9 +36,7 @@ form input[type="submit"] {
   cursor: pointer;
   transition: background-color 0.2s ease;
 }
-form input[type="submit"]:hover {
-  background-color: #5f45a0;
-}
+
 .dropdown {
   position: relative;
   display: inline-block;
@@ -54,9 +52,7 @@ form input[type="submit"]:hover {
   cursor: pointer;
   transition: background-color 0.2s ease;
 }
-.dropdown button:hover {
-  background-color: #343fb4;
-}
+
 .dropdown-content {
   display: none;
   position: absolute;
@@ -75,12 +71,8 @@ form input[type="submit"]:hover {
   display: block;
   transition: background-color 0.2s ease;
 }
-.dropdown-content a:hover {
-  background-color: #d7afaf;
-}
-.dropdown:hover .dropdown-content {
-  display: block;
-}
+
+
 button {
   background-color: #19586d;
   color: white;
@@ -90,11 +82,9 @@ button {
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-button:hover {
-  background-color: #264756;
-}
+
 #content {
-  font-size: 18px;
+  font-size: 15px;
   margin-top: 20px;
   animation: fadeIn 1s;
 }
