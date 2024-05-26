@@ -1,0 +1,108 @@
+body {
+  font-family: Arial;
+  background-color: #7ca7ce;
+  color: rgb(23, 20, 20);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h1,
+h2 {
+  margin-top: 15px;
+}
+form {
+  background-color: #8a6565;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 15px;
+}
+form input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #b33f3f;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+form input[type="submit"] {
+  background-color: #227124;
+  color: rgb(239, 230, 230);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+form input[type="submit"]:hover {
+  background-color: #5f45a0;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+.dropdown button {
+  background-color: #780a0a;
+  color: rgb(195, 228, 118);
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+.dropdown button:hover {
+  background-color: #343fb4;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #83ba41;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 4px;
+  overflow: hidden;
+  animation: fadeIn 0.5s;
+}
+.dropdown-content a {
+  color: rgb(20, 8, 8);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.2s ease;
+}
+.dropdown-content a:hover {
+  background-color: #d7afaf;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+button {
+  background-color: #19586d;
+  color: white;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+button:hover {
+  background-color: #264756;
+}
+#content {
+  font-size: 18px;
+  margin-top: 20px;
+  animation: fadeIn 1s;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
